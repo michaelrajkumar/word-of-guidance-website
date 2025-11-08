@@ -1,0 +1,180 @@
+baseURL = "/"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+enableRobotsTXT = true
+enableSitemap = true
+disableLanguages = []
+
+[languages]
+  [languages.en]
+    languageCode = "en-us"
+    languageName = "English"
+    title = "Word of Guidance – To equip for every good work"
+    weight = 1
+    [languages.en.params]
+      description = "Spiritual resources designed to help individuals come to know the Lord Jesus Christ"
+      languageFlag = "🇬🇧"
+  
+  [languages.hi]
+    languageCode = "hi"
+    languageName = "हिन्दी"
+    title = "मार्गदर्शन का वचन – हर अच्छे काम के लिए सुसज्जित करने के लिए"
+    weight = 2
+    [languages.hi.params]
+      description = "आध्यात्मिक संसाधन जो व्यक्तियों को प्रभु यीशु मसीह को जानने में मदद करने के लिए डिज़ाइन किए गए हैं"
+      languageFlag = "🇮🇳"
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  description = "Spiritual resources designed to help individuals come to know the Lord Jesus Christ"
+  author = "Anand David"
+  email = "wordofguidance@gmail.com"
+  location = "New Delhi, India"
+  copyright = " 2025 Word of Guidance"
+  note = "[Note: There is no commercial purpose for this website.]"
+
+# Menu Configuration - Exact match to original site
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Guidance"
+  url = "#"
+  weight = 2
+
+# Faith submenu under Guidance
+[[menu.main]]
+  name = "Faith"
+  url = "#"
+  parent = "Guidance"
+  weight = 1
+
+[[menu.main]]
+  name = "Bible on Sin"
+  url = "/bible-on-sin/"
+  parent = "Faith"
+  weight = 1
+
+[[menu.main]]
+  name = "Help from the Bible"
+  url = "/help-from-bible/"
+  parent = "Faith"
+  weight = 2
+
+[[menu.main]]
+  name = "Peace with God"
+  url = "/peace-with-god/"
+  parent = "Faith"
+  weight = 3
+
+[[menu.main]]
+  name = "Prayers for all"
+  url = "/prayers/"
+  parent = "Faith"
+  weight = 4
+
+# Other Guidance items
+[[menu.main]]
+  name = "Education"
+  url = "/education/"
+  parent = "Guidance"
+  weight = 2
+
+[[menu.main]]
+  name = "Job"
+  url = "/job/"
+  parent = "Guidance"
+  weight = 3
+
+[[menu.main]]
+  name = "Marriage"
+  url = "/marriage/"
+  parent = "Guidance"
+  weight = 4
+
+[[menu.main]]
+  name = "Christian Home"
+  url = "/christian-home/"
+  parent = "Guidance"
+  weight = 5
+
+[[menu.main]]
+  name = "Serving God"
+  url = "/serving-god/"
+  parent = "Guidance"
+  weight = 6
+
+[[menu.main]]
+  name = "Second Coming"
+  url = "/second-coming/"
+  parent = "Guidance"
+  weight = 7
+
+# About menu
+[[menu.main]]
+  name = "About"
+  url = "#"
+  weight = 3
+
+[[menu.main]]
+  name = "Bio"
+  url = "/bio/"
+  parent = "About"
+  weight = 1
+
+[[menu.main]]
+  name = "Articles"
+  url = "/articles/"
+  parent = "About"
+  weight = 2
+
+[[menu.main]]
+  name = "Sermons"
+  url = "#"
+  parent = "About"
+  weight = 3
+
+[[menu.main]]
+  name = "Videos"
+  url = "/videos/"
+  parent = "Sermons"
+  weight = 1
+
+[[menu.main]]
+  name = "Audios"
+  url = "/audios/"
+  parent = "Sermons"
+  weight = 2
+
+[[menu.main]]
+  name = "Updates"
+  url = "/updates/"
+  parent = "About"
+  weight = 4
+
+# Top level items
+[[menu.main]]
+  name = "Sitemap"
+  url = "/sitemap/"
+  weight = 4
+
+[[menu.main]]
+  name = "Contact"
+  url = "/contact/"
+  weight = 5
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      linkify = false
+
+[outputs]
+  home = ["HTML", "JSON", "RSS"]
+  section = ["HTML", "JSON"]
+  page = ["HTML"]

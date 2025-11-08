@@ -1,0 +1,28 @@
+{
+  "name": "word-of-guidance",
+  "version": "1.0.0",
+  "description": "Word of Guidance - Hugo Static Website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "hugo server -D",
+    "build": "hugo --gc --minify",
+    "build:preview": "hugo --gc --minify -b $DEPLOY_PRIME_URL",
+    "clean": "rm -rf public resources",
+    "serve": "hugo server",
+    "serve:prod": "hugo server --environment production",
+    "lint": "echo 'Add linting tools as needed'",
+    "test": "echo 'Add testing tools as needed'"
+  },
+  "keywords": [
+    "hugo",
+    "static-site-generator",
+    "website",
+    "spiritual",
+    "christian"
+  ],
+  "author": "Word of Guidance",
+  "license": "MIT",
+  "devDependencies": {
+    "hugo-bin": "^0.149.2"
+  }
+}

@@ -1,0 +1,73 @@
+# Hugo build outputs
+public/
+resources/
+
+# Hugo cache
+.hugo_build.lock
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# SSH helper scripts (contain passwords)
+# Temporarily allowing .exp files for initial commit with sanitized credentials
+# .ssh-connect.exp
+# .rsync-helper.exp
+.ssh-helper.sh
+.scp-helper.exp
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*~
+
+# Logs
+logs
+*.log
+
+# Large audio/archive files (too large for GitHub)
+audios.rar
+**/sounds/05FamilyNRelationships_TamilAD2014_07_06.mp3
+**/sounds/06RepentanceEng_Hin_ADMsg3May2015.mp3
+**/sounds/07The_WillOfGod_Admsg_Delhi_5Aug2018.mp3
+**/sounds/09ApollosByADavid20231119ygEGF.mp3
+**/sounds/11BlessingsFmTheLord_AdJcDdn28Apr2024-v2.mp3
+
+# Claude Code settings (optional - remove if you want to keep them)
+.claude/settings.local.json

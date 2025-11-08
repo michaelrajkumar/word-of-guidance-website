@@ -1,0 +1,16 @@
+#!/usr/bin/expect -f
+set timeout 20
+set host "YOUR_SERVER_IP"
+set port "YOUR_SSH_PORT"
+set user "YOUR_SSH_USER"
+set password {YOUR_SSH_PASSWORD}
+set cmd [lindex $argv 0]
+
+spawn ssh -p $port -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null $user@$host $cmd
+expect {
+    "*password:*" {
+        send "$password\r"
+        exp_continue
+    }
+    eof
+}

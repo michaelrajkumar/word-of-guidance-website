@@ -1,0 +1,12 @@
+{
+  "name": "word-of-guidance-email-service",
+  "version": "1.0.0",
+  "description": "Simple email service for Word of Guidance contact form",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["email", "contact-form"],
+  "author": "",
+  "license": "MIT"
+}

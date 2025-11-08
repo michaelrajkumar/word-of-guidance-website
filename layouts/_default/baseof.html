@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="{{ .Language.Lang }}">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  {{ partial "header.html" . }}
+  
+  <main id="content" role="main">
+    {{ block "main" . }}{{ end }}
+  </main>
+  
+  {{ partial "footer.html" . }}
+  
+  <!-- Audio Player Modal -->
+  <div id="audioPlayerModal" class="audio-modal">
+    <div class="audio-modal-content">
+      <span class="close-audio-modal">&times;</span>
+      <div class="audio-player-container">
+        <div class="audio-info">
+          <span id="audioSpeaker"></span>
+          <span id="audioDate"></span>
+        </div>
+        <audio id="audioPlayer" controls>
+          Your browser does not support the audio element.
+        </audio>
+        <div id="audioDescription" class="audio-description"></div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .audio-modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.7);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    
+    .audio-modal.show {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 1;
+    }
+    
+    .audio-modal-content {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      width: 90%;
+      max-width: 500px;
+      position: relative;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+    
+    .close-audio-modal {
+      position: absolute;
+      right: 1.5rem;
+      top: 1rem;
+      font-size: 1.8rem;
+      cursor: pointer;
+      color: #666;
+    }
+    
+    .close-audio-modal:hover {
+      color: #333;
+    }
+    
+    .audio-player-container {
+      margin-top: 1rem;
+    }
+    
+    .audio-info {
+      color: #666;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+    
+    #audioPlayer {
+      width: 100%;
+      margin: 1rem 0;
+    }
+    
+    .audio-description {
+      margin-top: 1rem;
+      color: #444;
+      line-height: 1.5;
+    }
+  </style>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const modal = document.getElementById('audioPlayerModal');
+      const closeBtn = document.querySelector('.close-audio-modal');
+      const audioPlayer = document.getElementById('audioPlayer');
+      const audioTitle = document.getElementById('audioTitle');
+      const audioSpeaker = document.getElementById('audioSpeaker');
+      const audioDate = document.getElementById('audioDate');
+      const audioDescription = document.getElementById('audioDescription');
+      
+      // Close modal when clicking the close button
+      closeBtn.addEventListener('click', function() {
+        audioPlayer.pause();
+        modal.classList.remove('show');
+      });
+      
+      // Close modal when clicking outside the content
+      window.addEventListener('click', function(event) {
+        if (event.target === modal) {
+          audioPlayer.pause();
+          modal.classList.remove('show');
+        }
+      });
+      
+      // Handle audio link clicks
+      document.addEventListener('click', function(event) {
+        const audioLink = event.target.closest('[data-audio]');
+        if (audioLink) {
+          event.preventDefault();
+          
+          // Set audio source and metadata
+          audioPlayer.src = audioLink.getAttribute('data-audio');
+          audioTitle.textContent = audioLink.getAttribute('data-title') || 'Audio Player';
+          audioSpeaker.textContent = audioLink.getAttribute('data-speaker') ? 'Speaker: ' + audioLink.getAttribute('data-speaker') : '';
+          audioDate.textContent = audioLink.getAttribute('data-date') ? ' | ' + audioLink.getAttribute('data-date') : '';
+          audioDescription.innerHTML = audioLink.getAttribute('data-description') || '';
+          
+          // Show the modal and play the audio
+          modal.classList.add('show');
+          audioPlayer.play().catch(e => console.log('Auto-play was prevented:', e));
+        }
+      });
+    });
+  </script>
+  
+  <script src="{{ .Site.BaseURL }}js/main.js"></script>
+</body>
+</html>

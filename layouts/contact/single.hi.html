@@ -1,0 +1,40 @@
+{{ define "main" }}
+<div class="contact-page">
+  <div class="page-header">
+    <h1 class="page-title">{{ .Title }}</h1>
+  </div>
+  
+  <div class="contact-content">
+    {{ .Content }}
+    
+    <form name="contact-hi" method="POST" class="contact-form" netlify data-netlify="true">
+      <div class="form-group">
+        <label for="name">आपका नाम</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">आपका ईमेल</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="subject">विषय</label>
+        <input type="text" id="subject" name="subject" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="message">आपका संदेश (वैकल्पिक)</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+      </div>
+      
+      <div class="form-group honeypot">
+        <label for="website">वेबसाइट</label>
+        <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+      </div>
+      
+      <button type="submit" class="submit-btn">भेजें</button>
+    </form>
+  </div>
+</div>
+{{ end }}

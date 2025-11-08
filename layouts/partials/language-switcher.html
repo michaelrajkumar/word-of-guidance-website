@@ -1,0 +1,216 @@
+<div class="language-switcher">
+  <button class="lang-toggle-btn" id="langToggleBtn" aria-label="Change Language" title="Change Language">
+    <svg class="lang-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10"></circle>
+      <line x1="2" y1="12" x2="22" y2="12"></line>
+      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+    </svg>
+    <span class="lang-current-text">{{ $.Language.LanguageName }}</span>
+    <svg class="lang-arrow" width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+      <path d="M6 9L1 4h10z"/>
+    </svg>
+  </button>
+  
+  <div class="lang-dropdown" id="langDropdown">
+    {{ range $.Site.Languages }}
+      {{ if ne $.Language.Lang .Lang }}
+        <a href="{{ .Lang | relLangURL }}" class="lang-option" data-lang="{{ .Lang }}">
+          <span class="lang-flag">{{ .Params.languageFlag }}</span>
+          <span class="lang-name">{{ .LanguageName }}</span>
+        </a>
+      {{ else }}
+        <div class="lang-option lang-option-active">
+          <span class="lang-flag">{{ .Params.languageFlag }}</span>
+          <span class="lang-name">{{ .LanguageName }}</span>
+          <svg class="lang-check" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+          </svg>
+        </div>
+      {{ end }}
+    {{ end }}
+  </div>
+</div>
+
+<style>
+.language-switcher {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  z-index: 999;
+}
+
+.lang-toggle-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.lang-toggle-btn:hover {
+  background: #f8f8f8;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.lang-toggle-btn:active {
+  transform: translateY(1px);
+}
+
+.lang-icon {
+  color: #0066cc;
+  flex-shrink: 0;
+}
+
+.lang-current-text {
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.lang-arrow {
+  color: #666;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.lang-toggle-btn.active .lang-arrow {
+  transform: rotate(180deg);
+}
+
+.lang-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  min-width: 180px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.lang-dropdown.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.lang-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.lang-option:last-child {
+  border-bottom: none;
+}
+
+.lang-option:hover {
+  background-color: #f8f8f8;
+}
+
+.lang-option-active {
+  background-color: #e8f4f8;
+  color: #0066cc;
+  font-weight: 500;
+  cursor: default;
+}
+
+.lang-option-active:hover {
+  background-color: #e8f4f8;
+}
+
+.lang-flag {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.lang-name {
+  flex: 1;
+  font-size: 0.9rem;
+}
+
+.lang-check {
+  color: #0066cc;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .language-switcher {
+    top: 70px;
+    right: 10px;
+  }
+  
+  .lang-toggle-btn {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+  }
+  
+  .lang-icon {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .lang-dropdown {
+    min-width: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .lang-current-text {
+    display: none;
+  }
+  
+  .lang-toggle-btn {
+    padding: 8px;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const toggleBtn = document.getElementById('langToggleBtn');
+  const dropdown = document.getElementById('langDropdown');
+  
+  if (toggleBtn && dropdown) {
+    toggleBtn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      toggleBtn.classList.toggle('active');
+      dropdown.classList.toggle('show');
+    });
+    
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(e) {
+      if (!toggleBtn.contains(e.target) && !dropdown.contains(e.target)) {
+        toggleBtn.classList.remove('active');
+        dropdown.classList.remove('show');
+      }
+    });
+    
+    // Close dropdown on escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        toggleBtn.classList.remove('active');
+        dropdown.classList.remove('show');
+      }
+    });
+  }
+});
+</script>

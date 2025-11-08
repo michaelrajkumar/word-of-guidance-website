@@ -1,0 +1,70 @@
+{{ define "main" }}
+<article class="single-audio-page">
+  <div class="container">
+    <div class="audio-header" style="text-align: center; margin-bottom: 2rem;">
+      <a href="/audios" class="back-link" style="display: inline-block; margin-bottom: 1rem; color: #3a5a7a; text-decoration: none;">
+        &larr; Back to Audio Sermons
+      </a>
+      <h1 class="audio-title" style="font-size: 2rem; color: #333; margin-bottom: 0.5rem;">{{ .Title }}</h1>
+      {{ with .Params.description }}
+        <p class="audio-description" style="color: #666; margin-bottom: 1.5rem;">{{ . }}</p>
+      {{ end }}
+    </div>
+
+    <div class="audio-player-container" style="max-width: 600px; margin: 0 auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); padding: 2rem;">
+      <div class="audio-info" style="margin-bottom: 1.5rem;">
+        <h2 style="font-size: 1.5rem; color: #2c3e50; margin-bottom: 0.5rem;">{{ .Title }}</h2>
+        {{ with .Params.speaker }}
+          <p style="color: #7f8c8d; margin-bottom: 0.5rem;">Speaker: {{ . }}</p>
+        {{ end }}
+        {{ with .Params.date }}
+          <p style="color: #7f8c8d; font-size: 0.9rem;">Date: {{ .Format "January 2, 2006" }}</p>
+        {{ end }}
+      </div>
+
+      <div class="audio-element" style="width: 100%;">
+        <audio id="audioPlayer" controls style="width: 100%;">
+          <source src="{{ .Params.audio_url }}" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      {{ with .Content }}
+        <div class="audio-transcript" style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid #eee;">
+          <h3 style="color: #2c3e50; margin-bottom: 1rem;">About This Message</h3>
+          <div style="line-height: 1.6; color: #333;">
+            {{ . | markdownify }}
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</article>
+
+<style>
+  audio {
+    border-radius: 4px;
+    background: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  audio::-webkit-media-controls-panel {
+    background-color: #f8f9fa;
+  }
+  
+  audio::-webkit-media-controls-play-button,
+  audio::-webkit-media-controls-mute-button {
+    background-color: #3a5a7a;
+    border-radius: 50%;
+  }
+  
+  audio::-webkit-media-controls-current-time-display,
+  audio::-webkit-media-controls-time-remaining-display {
+    color: #2c3e50;
+  }
+  
+  .back-link:hover {
+    text-decoration: underline;
+  }
+</style>
+{{ end }}

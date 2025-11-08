@@ -1,0 +1,14 @@
+#!/usr/bin/expect -f
+set timeout 300
+set src [lindex $argv 0]
+set dst [lindex $argv 1]
+set password "YOUR_SSH_PASSWORD"
+
+spawn rsync -avz --delete -e "ssh -p YOUR_SSH_PORT -o StrictHostKeyChecking=no" $src $dst
+expect {
+    "password:" {
+        send "$password\r"
+        exp_continue
+    }
+    eof
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {{ range .Site.AllPages }}
+  {{ if not .Params.private }}
+  <url>
+    <loc>{{ .Permalink }}</loc>
+    <lastmod>{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}</lastmod>
+    {{ if ne .Permalink .Site.BaseURL }}<priority>{{ if eq .Section "" }}1.0{{ else }}0.8{{ end }}</priority>{{ end }}
+  </url>
+  {{ end }}
+  {{ end }}
+</urlset>

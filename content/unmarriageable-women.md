@@ -1,0 +1,65 @@
+---
+title: "Unmarriageable Women"
+description: "Guidelines about unmarriageable women"
+---
+
+## UNMARRIAGEABLE WOMEN
+## by Sylvester Onyemalechi
+
+There are some people that are marriageable and there are some that are not. So many people spend their time looking and praying for a partner rather than making themselves qualify as a marriageable person. My desire is to see young people pay more attention to preparing themselves to succeed in marriage than worrying about finding a partner.
+
+We will concentrate our discussion on those who do not qualify to be married. If some of the things I will be writing about affect you, please don't be angry with me, rather, take it as a challenge to go to work on yourself to eliminate the things that the word of God condemns in you and go for those things God wants you to put in place in your life. The scripture is very clear about the quality of a good wife. These qualities reveal the kind of woman a godly man should marry. Marrying those the scripture condemns will amount to invitation to crisis.
+
+### **1. A foolish woman**
+
+*"The wise woman builds her house, but with her own hands the foolish one tears hers down." (<a href="https://www.biblegateway.com/passage/?search=Proverbs+14:1&version=NIV" target="_blank" rel="noopener noreferrer">Prov 14:1</a>)*
+
+Marriage is likened to a building that is supposed to have good, strong and durable foundation. The wise woman does what is necessary to make sure her marriage and home is intact. The foolish woman does not care what happens though she does not wish that her marriage collapse. Everything we say and do matters a lot. The wise woman understands this and is careful in all her actions and in making utterances. She knows that words breed more words and provoke reactions, which can in turn create confusion and quarrels. In her wisdom and desire to keep her marriage, she acts carefully.
+
+The foolish woman is foolish because she doesn't give a damn about the outcome of her words and actions. Wisdom is the supreme thing in this life. Everything one does, he requires wisdom to succeed. Without wisdom, failure is inevitable. To marry a woman without wisdom is to marry trouble. There are those who are not educated but are wise in their actions. There are those who are educated, but speak and act foolishly. That is why wisdom is described as "knowledge rightly applied".
+
+Knowledge that is not applied is wasted. Many are educated in the word of God as far as successful relationship is concerned, yet they can't relate well. Such people are foolish. Jesus taught that the wise person acts upon what he has heard (<a href="https://www.biblegateway.com/passage/?search=Luke+6:46-49&version=NIV" target="_blank" rel="noopener noreferrer">Luke 6:46-49</a>). A wise person's lifestyle reveals wisdom. It doesn't hide. They always act after careful thought. They are always mindful of their actions and reactions, words and response. They are also mindful of the fact that everybody has got feelings, and people's feelings must be respected. The wise seeks to please the partner rather than displease him. Therefore, it is important you marry a wise woman. Associating with people will reveal the wisdom and foolishness in them. Remember, the foolish woman tears her house down because of her foolish acts. So if you want to build a strong and durable marriage and home, what you need is a wise woman.
+
+### **2. A quarrelsome woman.**
+
+*"Better to live in a desert than with a quarrelsome and ill-tempered wife." (<a href="https://www.biblegateway.com/passage/?search=Proverbs+21:19&version=NIV" target="_blank" rel="noopener noreferrer">Prov. 21:19</a>)*
+
+*"Better to live on the corner of the roof than share a house with a quarrelsome wife." (<a href="https://www.biblegateway.com/passage/?search=Proverbs+21:9&version=NIV" target="_blank" rel="noopener noreferrer">Prov. 21:9</a>)*
+
+A quarrelsome woman is a bundle of trouble. Marrying such is bringing trouble into your house. If you discover the woman you are interested in is very troublesome, and unwilling to change, free yourself from the relationship, otherwise, the love you claim you have for her will soon turn to serious hate. A quarrelsome woman is a woman of anger, and the Bible strictly advices us not to move with a man or woman who is given to anger (<a href="https://www.biblegateway.com/passage/?search=Proverbs+22:24&version=NIV" target="_blank" rel="noopener noreferrer">Prov. 22:24</a>). A quarrelsome woman is ill-tempered. Forgiveness is a hard thing for her. Bitterness and malice is a normal thing for the quarrelsome woman. The scripture says it is better to live in the desert or on the corner of a roof top than to live with such. Quarrels kill love and breed hatred. It makes the home uncomfortable. Quarrels lead to separation and divorce. To avoid that from happening in your marriage, don't marry a quarrelsome person. Keep your eyes open. Don't allow emotions to blind you. If you do, soon you will see clearly.
+
+### **3. A lazy woman**
+
+*"A little sleep, a little folding of the hands to rest –and poverty will come on you like a bandit and scarcity like an armed man." (<a href="https://www.biblegateway.com/passage/?search=Proverbs+24:33-34&version=NIV" target="_blank" rel="noopener noreferrer">Prov. 24:33-34</a>)*
+
+*"A wife of noble character who can find? She is worth far more than rubies. Her husband has full confidence in her and lacks nothing of value. She brings him good, not harm, all the days of her life. She selects wool and flax and works with eager hands. She is like the merchant ships, bringing her food from afar. **She gets up while it is still dark;** she provides food for her family and portions for her servant girls. She considers a field and buys it; out of her earnings she plants a vineyard. **She sets about her work vigorously; her arms are strong for her tasks.** She sees that her trading is profitable, and her lamp does not go out at night. In her hand she holds the distaff and grasps the spindle with her fingers. She opens he arms to the poor and extends her hands to the needy. When it snows she has no fear for her household; for all of them are clothed in scarlet. She makes coverings for her bed; she is clothed in fine linen and purple. Her husband is respected at the city gate where he takes his seat among the elders of the land. She makes linen garments and sells them, and supplies the merchants with sashes. **She is clothed with strength and dignity;** she can laugh at the days to come. She speaks with wisdom, and faithful instruction is on her tongue. **She watches over the affairs of her household and does not eat the bread of idleness.** Her children arise and call her blessed, her husband also, and he praises her: 'Many women do noble things, but you surpass them all." Charms is deceptive and beauty fleeting; but a woman who fears the LORD is to be praised. Give her the reward she has earned, and let her works brings her praise at the city gate." (<a href="https://www.biblegateway.com/passage/?search=Proverbs+31:10-31&version=NIV" target="_blank" rel="noopener noreferrer">Prov. 31:10-31</a>)*
+
+The virtuous woman which is the ideal wife described in the above passage is a very hand working woman. It is not easy to find a woman that fits that description completely, but one thing is clear, every woman should aspire to be like her. Marrying a woman who is lazy will create a peace-less home. I am not saying you should look for a machine, but a hardworking and industrious woman. You don't need a slave but a woman that is not lazy and expecting the man to do everything. You need someone who understands what it means to be a helpmate. You need someone that is smart and knows how to take responsibility.
+
+### **4. An immoral woman**
+
+*"My son pay attention to my wisdom, listen well to my words of insight, that you may maintain discretion and your lips may preserve knowledge. For the lips of an adulteress drip honey, and her speech is smoother than oil; but in the end she is bitter as gall, sharp as a double-edged sword. Her feet go down to death; her steps lead straight to the grave. She gives no thought to the way of life; her paths are crooked, but she knows it not." (<a href="https://www.biblegateway.com/passage/?search=Proverbs+5:1-6&version=NIV" target="_blank" rel="noopener noreferrer">Prov. 5:1-6</a>)*
+
+A wayward woman will be a wayward wife. To marry someone you know has not repented of her immoral life is foolishness. You will have no right to complain that she is unfaithful to you since you knew that has been her manner of life. Wait till she has fully changed before engaging her in marriage. A lady that is courting more than one person at the same time is only reflecting what kind of person she is and will manifest in future. A lady that preoccupies herself with her beauty and how much she is being admired by men is a potential adulteress. Look before you leap. Except you are Hosea the prophet who was asked by God to marry a prostitute, don't attempt it.
+
+### **5. A woman looking for someone to carry her burden.**
+
+*"The LORD God said, 'It is not good for the man to be alone, I will make a helper suitable for him." (<a href="https://www.biblegateway.com/passage/?search=Genesis+2:18&version=NIV" target="_blank" rel="noopener noreferrer">Gen. 2:18</a>)*
+
+The purpose of God giving the woman to man is for the woman to help the man. The woman was never intended to be a burden to the man. The woman was to complete the life of the man and assist him to make life easy. For any woman to marry with the intention that the man will become her burden bearer is an aberration. Many lazy and sometimes frustrated ladies look out desperately for comfortable men whom they feel can take care of them and their numerous family problems. You don't marry someone because you want the person to help you. Marriage is on the condition of real love. If you marry someone out of pity or someone marries you out of pity, you will soon pity yourself. You don't start a marriage with a burden. When you are not able to meet up with the expectations of the lady, you will be put under serious pressure. Another problem you will be confronted with is that you will be relating with a self-centered person whose only concern is her reason for marrying you – her concern and burden. Ladies, let God be your burden bearer and not man. Marry for love and nothing else.
+
+### **6. An unbeliever**
+
+*"Do not be unequally yoked together with unbelievers. For what do righteousness and wickedness have in common? Or what fellowship can light have with darkness? What harmony is there between Christ and Belial? What does a believer have in common with an unbeliever? What agreement is there between the temple of God and idols? For we are the temple of the living God, as God has said: 'I will live with them and walk among them, and I will be their God and they will be my people. Therefore, come out from them and be separate, says the Lord. 'Touch no unclean thing, and I will receive you. I will be a father to you, and you will be my sons and daughters, says the Lord Almighty."* (<a href="https://www.biblegateway.com/passage/?search=2+Corinthians+6:14-18&version=NIV" target="_blank" rel="noopener noreferrer">2 Corinthians 6:14-18</a>)
+
+An unbeliever has nothing in common with a believer as far as spiritual relationship is concerned. In marriage, the souls of the two people involved are tied together through the sexual communion. To join the temple of God with the temple of the devil or Belial, is calling for war. God himself says it won't work. The believer is called the light, while the unbeliever is called darkness. The believer is called righteousness, while the unbeliever is called wickedness. The believer is called the temple of God, while the unbeliever is called the temple of Belial (Devil).
+
+God says the unbeliever is unclean, therefore the believer should come out of them. How can a believer then marry an unbeliever? The conclusion of the matter is that you the believer should stay away from joining yourself to an unbeliever in marriage and their lifestyle, God says, he will take you as his son or daughter and he will be your Father. Don't make the mistake of going contrary to this instruction, or you will regret it. You can never be wiser than God.
+
+### **CONCLUSION**
+
+If you are a woman and some of, or all that I have spoken about describes your life, please help yourself and turn from them. Clean up your life and allow God in you to make you a happy and marriageable woman. Every single male who desires a peaceful and successful marriage should take these instructions serious and avoid unmarriageable women.
+
+<div style="margin-top: 2rem; text-align: center;">
+  <a href="/marriage/" style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px;">Back to Marriage</a>
+</div>

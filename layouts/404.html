@@ -1,0 +1,27 @@
+{{ define "main" }}
+<div class="error-page">
+  <div class="error-container">
+    <h1 class="error-code">404</h1>
+    <h2 class="error-title">Page Not Found</h2>
+    <p class="error-message">
+      Sorry, the page you're looking for doesn't exist or has been moved.
+    </p>
+    
+    <div class="error-actions">
+      <a href="{{ .Site.BaseURL }}" class="btn btn-primary">Go to Home</a>
+      <a href="{{ .Site.BaseURL }}sitemap/" class="btn btn-secondary">View Sitemap</a>
+    </div>
+    
+    <div class="error-suggestions">
+      <h3>Popular Pages:</h3>
+      <ul>
+        <li><a href="{{ .Site.BaseURL }}bio/">Bio</a></li>
+        <li><a href="{{ .Site.BaseURL }}articles/">Articles</a></li>
+        <li><a href="{{ .Site.BaseURL }}videos/">Videos</a></li>
+        <li><a href="{{ .Site.BaseURL }}audios/">Audios</a></li>
+        <li><a href="{{ .Site.BaseURL }}contact/">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+{{ end }}
