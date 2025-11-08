@@ -64,9 +64,7 @@ Even if ALL of the above go wrong, the members of the family should reconcile be
 - <a href="https://www.holymatrimonial.com" target="_blank" rel="noopener noreferrer">www.holymatrimonial.com</a>
 - <a href="https://www.angelmatrimony.com" target="_blank" rel="noopener noreferrer">www.angelmatrimony.com</a>
 - <a href="https://www.shaadi.com/matrimonials/christian-matrimonial" target="_blank" rel="noopener noreferrer">www.shaadi.com/matrimonials/christian-matrimonial</a>
-- <a href="https://www.godlymatch.com" target="_blank" rel="noopener noreferrer">www.godlymatch.com</a>
 - <a href="http://genesismatrimony.com/" target="_blank" rel="noopener noreferrer">genesismatrimony.com</a>
-- <a href="https://www.matchmonial.com" target="_blank" rel="noopener noreferrer">www.matchmonial.com</a>
 - <a href="https://www.christianmatrimony.com" target="_blank" rel="noopener noreferrer">www.christianmatrimony.com</a>
 - <a href="http://believerswedding.com" target="_blank" rel="noopener noreferrer">believerswedding.com</a>
 
