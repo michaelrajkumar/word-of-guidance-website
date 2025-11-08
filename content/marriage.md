@@ -61,7 +61,6 @@ Even if ALL of the above go wrong, the members of the family should reconcile be
 
 ### If you are seeking a life partner who believes in Christ, kindly check the following websites:
 
-- <a href="https://www.jesuscalls.org/mb/mblogin.aspx" target="_blank" rel="noopener noreferrer">www.jesuscalls.org/mb/mblogin.aspx</a>
 - <a href="https://www.holymatrimonial.com" target="_blank" rel="noopener noreferrer">www.holymatrimonial.com</a>
 - <a href="https://www.angelmatrimony.com" target="_blank" rel="noopener noreferrer">www.angelmatrimony.com</a>
 - <a href="https://www.shaadi.com/matrimonials/christian-matrimonial" target="_blank" rel="noopener noreferrer">www.shaadi.com/matrimonials/christian-matrimonial</a>
