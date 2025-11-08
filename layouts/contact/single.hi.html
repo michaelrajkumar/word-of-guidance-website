@@ -3,38 +3,194 @@
   <div class="page-header">
     <h1 class="page-title">{{ .Title }}</h1>
   </div>
-  
+
   <div class="contact-content">
     {{ .Content }}
-    
-    <form name="contact-hi" method="POST" class="contact-form" netlify data-netlify="true">
+
+    <form class="contact-form" id="contactFormHi" method="POST" onsubmit="return handleSubmitHi(event)">
       <div class="form-group">
         <label for="name">आपका नाम</label>
         <input type="text" id="name" name="name" required>
       </div>
-      
+
       <div class="form-group">
         <label for="email">आपका ईमेल</label>
         <input type="email" id="email" name="email" required>
       </div>
-      
+
       <div class="form-group">
         <label for="subject">विषय</label>
         <input type="text" id="subject" name="subject" required>
       </div>
-      
+
       <div class="form-group">
         <label for="message">आपका संदेश</label>
         <textarea id="message" name="message" rows="5" required></textarea>
       </div>
-      
+
       <div class="form-group honeypot">
         <label for="website">वेबसाइट</label>
         <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
       </div>
-      
+
+      <!-- Math CAPTCHA -->
+      <div class="form-group">
+        <label for="captcha">सुरक्षा प्रश्न: <span id="mathQuestionHi"></span></label>
+        <input type="text" id="captcha" name="captcha" required placeholder="अपना उत्तर दर्ज करें">
+        <input type="hidden" id="captchaAnswerHi" name="captchaAnswer">
+      </div>
+
       <button type="submit" class="submit-btn">भेजें</button>
     </form>
   </div>
 </div>
+
+<div id="successModalHi" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModalHi()">&times;</span>
+    <h3>✓ संदेश भेजा गया!</h3>
+    <p>हमसे संपर्क करने के लिए धन्यवाद। हम जल्द ही आपको जवाब देंगे।</p>
+    <button onclick="closeModalHi()" class="ok-btn">ठीक है</button>
+  </div>
+</div>
+
+<style>
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close:hover { color: #000; }
+.modal-content h3 {
+  color: #4CAF50;
+  margin-bottom: 15px;
+}
+.ok-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.ok-btn:hover { background-color: #45a049; }
+.honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+</style>
+
+<script>
+// Generate random math CAPTCHA on page load
+window.addEventListener('DOMContentLoaded', function() {
+  const num1 = Math.floor(Math.random() * 10) + 1;
+  const num2 = Math.floor(Math.random() * 10) + 1;
+  const answer = num1 + num2;
+
+  document.getElementById('mathQuestionHi').textContent = num1 + ' + ' + num2 + ' क्या है?';
+  document.getElementById('captchaAnswerHi').value = answer;
+});
+</script>
+
+<script>
+function handleSubmitHi(event) {
+  event.preventDefault();
+
+  const form = document.getElementById('contactFormHi');
+  const submitButton = form.querySelector('.submit-btn');
+
+  // Check honeypot - if filled, it's a bot
+  const honeypot = document.getElementById('website').value;
+  if (honeypot) {
+    console.log('Bot detected via honeypot');
+    return false;
+  }
+
+  // Validate CAPTCHA
+  const userAnswer = document.getElementById('captcha').value;
+  const correctAnswer = document.getElementById('captchaAnswerHi').value;
+
+  if (userAnswer !== correctAnswer) {
+    alert('सुरक्षा प्रश्न का गलत उत्तर। कृपया पुनः प्रयास करें।');
+    return false;
+  }
+
+  // Disable button and show loading state
+  submitButton.disabled = true;
+  submitButton.textContent = 'भेज रहे हैं...';
+
+  // Prepare form data as URL-encoded
+  const formData = new FormData(form);
+  const urlEncodedData = new URLSearchParams(formData).toString();
+
+  // Send to email service
+  fetch('/send-email.cgi', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    body: urlEncodedData
+  })
+  .then(response => response.json())
+  .then(data => {
+    if (data.success) {
+      console.log('Email sent successfully');
+      showModalHi();
+      form.reset();
+      // Generate new CAPTCHA
+      const num1 = Math.floor(Math.random() * 10) + 1;
+      const num2 = Math.floor(Math.random() * 10) + 1;
+      const answer = num1 + num2;
+      document.getElementById('mathQuestionHi').textContent = num1 + ' + ' + num2 + ' क्या है?';
+      document.getElementById('captchaAnswerHi').value = answer;
+    } else {
+      alert('संदेश भेजने में विफल: ' + data.message + '\n\nकृपया पुनः प्रयास करें या हमसे सीधे संपर्क करें wordofguidance@gmail.com');
+    }
+    submitButton.disabled = false;
+    submitButton.textContent = 'भेजें';
+  })
+  .catch(error => {
+    console.error('Error:', error);
+    alert('संदेश भेजने में विफल। कृपया पुनः प्रयास करें या हमसे सीधे संपर्क करें wordofguidance@gmail.com');
+    submitButton.disabled = false;
+    submitButton.textContent = 'भेजें';
+  });
+
+  return false;
+}
+
+function showModalHi() {
+  document.getElementById('successModalHi').style.display = 'block';
+}
+
+function closeModalHi() {
+  document.getElementById('successModalHi').style.display = 'none';
+}
+</script>
 {{ end }}

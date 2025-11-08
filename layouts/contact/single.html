@@ -27,13 +27,20 @@
         <label for="message">Your message</label>
         <textarea id="message" name="message" rows="5" required></textarea>
       </div>
-      
 
-      
+      <!-- Honeypot field - hidden from users, catches bots -->
+      <div class="form-group honeypot">
+        <label for="website">Website</label>
+        <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+      </div>
 
-      
+      <!-- Math CAPTCHA -->
+      <div class="form-group">
+        <label for="captcha">Security question: <span id="mathQuestion"></span></label>
+        <input type="text" id="captcha" name="captcha" required placeholder="Enter your answer">
+        <input type="hidden" id="captchaAnswer" name="captchaAnswer">
+      </div>
 
-      
       <button type="submit" class="submit-btn">Submit</button>
     </form>
   </div>
@@ -91,7 +98,26 @@
   margin-top: 15px;
 }
 .ok-btn:hover { background-color: #45a049; }
+.honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
 </style>
+
+<script>
+// Generate random math CAPTCHA on page load
+window.addEventListener('DOMContentLoaded', function() {
+  const num1 = Math.floor(Math.random() * 10) + 1;
+  const num2 = Math.floor(Math.random() * 10) + 1;
+  const answer = num1 + num2;
+
+  document.getElementById('mathQuestion').textContent = 'What is ' + num1 + ' + ' + num2 + '?';
+  document.getElementById('captchaAnswer').value = answer;
+});
+</script>
 
 <script>
 function handleSubmit(event) {
@@ -99,6 +125,22 @@ function handleSubmit(event) {
 
   const form = document.getElementById('contactForm');
   const submitButton = form.querySelector('.submit-btn');
+
+  // Check honeypot - if filled, it's a bot
+  const honeypot = document.getElementById('website').value;
+  if (honeypot) {
+    console.log('Bot detected via honeypot');
+    return false;
+  }
+
+  // Validate CAPTCHA
+  const userAnswer = document.getElementById('captcha').value;
+  const correctAnswer = document.getElementById('captchaAnswer').value;
+
+  if (userAnswer !== correctAnswer) {
+    alert('Incorrect answer to the security question. Please try again.');
+    return false;
+  }
 
   // Disable button and show loading state
   submitButton.disabled = true;
@@ -122,6 +164,12 @@ function handleSubmit(event) {
       console.log('Email sent successfully');
       showModal();
       form.reset();
+      // Generate new CAPTCHA
+      const num1 = Math.floor(Math.random() * 10) + 1;
+      const num2 = Math.floor(Math.random() * 10) + 1;
+      const answer = num1 + num2;
+      document.getElementById('mathQuestion').textContent = 'What is ' + num1 + ' + ' + num2 + '?';
+      document.getElementById('captchaAnswer').value = answer;
     } else {
       alert('Failed to send message: ' + data.message + '\n\nPlease try again or contact us directly at wordofguidance@gmail.com');
     }
