@@ -61,13 +61,5 @@ yarn-error.log*
 logs
 *.log
 
-# Large audio/archive files (too large for GitHub)
-audios.rar
-**/sounds/05FamilyNRelationships_TamilAD2014_07_06.mp3
-**/sounds/06RepentanceEng_Hin_ADMsg3May2015.mp3
-**/sounds/07The_WillOfGod_Admsg_Delhi_5Aug2018.mp3
-**/sounds/09ApollosByADavid20231119ygEGF.mp3
-**/sounds/11BlessingsFmTheLord_AdJcDdn28Apr2024-v2.mp3
-
 # Claude Code settings (optional - remove if you want to keep them)
 .claude/settings.local.json
