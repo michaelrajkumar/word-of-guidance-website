@@ -5,8 +5,8 @@ const querystring = require('querystring');
 // Configuration
 const PORT = 3001;
 const TO_EMAIL = 'wordofguidance@gmail.com';
-const FROM_EMAIL = 'michael.and.mary@gmail.com';
-const GMAIL_APP_PASSWORD = 'ewmf ajrx ebqo efhc';
+const FROM_EMAIL = 'wordofguidancemailer@gmail.com';
+const GMAIL_APP_PASSWORD = 'hjfs pbun qpuc bteb';
 const SITE_NAME = 'Word of Guidance';
 
 // Rate limiting - simple in-memory store
