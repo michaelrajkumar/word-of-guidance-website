@@ -73,7 +73,7 @@ layout: "single"
     <tr>
       <td data-label="#">5</td>
       <td data-label="Date">July 2013</td>
-      <td data-label="Title"><a href="/articles-pdf/ChurchsMissionByAD.pdf" target="_blank" rel="noopener noreferrer">Church's Mission – Stick or Humans?</a></td>
+      <td data-label="Title"><a href="/articles-pdf/ChurchsMissionByAD.pdf" target="_blank" rel="noopener noreferrer">Church's Mission – God's or Humans?</a></td>
       <td data-label="Publication">AIM, Vol 42, No 7, p25-27</td>
     </tr>
     <tr>
