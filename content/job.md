@@ -28,7 +28,6 @@ You may check the following popular websites frequently, or subscribe to some of
 - <a href="http://www.simplyhired.com" target="_blank" rel="noopener noreferrer">www.simplyhired.com</a>
 - <a href="http://www.glassdoor.com" target="_blank" rel="noopener noreferrer">www.glassdoor.com</a>
 - <a href="http://www.jobs.aol.com" target="_blank" rel="noopener noreferrer">www.jobs.aol.com</a>
-- <a href="http://www.snagajobs.com" target="_blank" rel="noopener noreferrer">www.snagajobs.com</a>
 - <a href="http://www.theladders.com" target="_blank" rel="noopener noreferrer">www.theladders.com</a>
 - <a href="http://www.careerjet.com" target="_blank" rel="noopener noreferrer">www.careerjet.com</a>
 - <a href="http://www.usajobs.com" target="_blank" rel="noopener noreferrer">www.usajobs.com</a>
