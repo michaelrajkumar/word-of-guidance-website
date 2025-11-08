@@ -142,8 +142,6 @@ layout: "single"
 
 ---
 
-**इस पृष्ठ को अपने दोस्तों को भेजने के लिए, लिंक है:** www.wordofguidance.in/peace-with-god
-
 ### मसीह में बढ़ने के लिए
 
 - <a href="https://www.biblegateway.com" target="_blank" rel="noopener noreferrer">www.biblegateway.com</a> (पवित्र बाइबिल)

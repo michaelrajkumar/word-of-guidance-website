@@ -138,9 +138,7 @@ This is just the beginning of a wonderful new life in Christ. To deepen this rel
 - Talk to God in prayer every day.
 - Tell others about Christ.
 - Worship, fellowship, and serve with other Christians in a church where Christ is preached.
-- As Christ’s representative in a needy world, demonstrate your new life by your love and concern for others.
-
-To send this page to your friends, the link is: www.wordofguidance.in/peace
+- As Christ's representative in a needy world, demonstrate your new life by your love and concern for others.
 
 ## To Grow in Christ
 
