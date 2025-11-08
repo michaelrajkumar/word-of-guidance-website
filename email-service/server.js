@@ -1,17 +1,27 @@
 const http = require('http');
-const { spawn } = require('child_process');
-const url = require('url');
+const nodemailer = require('nodemailer');
 const querystring = require('querystring');
 
 // Configuration
 const PORT = 3001;
 const TO_EMAIL = 'wordofguidance@gmail.com';
+const FROM_EMAIL = 'michael.and.mary@gmail.com';
+const GMAIL_APP_PASSWORD = 'ewmf ajrx ebqo efhc';
 const SITE_NAME = 'Word of Guidance';
 
 // Rate limiting - simple in-memory store
 const rateLimitMap = new Map();
 const RATE_LIMIT_WINDOW = 60000; // 1 minute
 const MAX_REQUESTS_PER_WINDOW = 3; // 3 requests per minute per IP
+
+// Create Gmail transporter
+const transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: FROM_EMAIL,
+    pass: GMAIL_APP_PASSWORD
+  }
+});
 
 // Helper function to check rate limit
 function checkRateLimit(ip) {
@@ -43,10 +53,14 @@ function parsePostData(req, callback) {
   });
 }
 
-// Helper function to send email using mail command
+// Helper function to send email using Gmail SMTP
 function sendEmail(name, email, subject, message, callback) {
-  const emailSubject = `[${SITE_NAME} Contact Form] ${subject}`;
-  const emailBody = `New contact form submission:
+  const mailOptions = {
+    from: `${SITE_NAME} <${FROM_EMAIL}>`,
+    to: TO_EMAIL,
+    replyTo: email,
+    subject: `[${SITE_NAME} Contact Form] ${subject}`,
+    text: `New contact form submission:
 
 Name: ${name}
 Email: ${email}
@@ -54,29 +68,24 @@ Subject: ${subject}
 
 Message:
 ${message}
-`;
 
-  // Spawn mail command
-  const mail = spawn('mail', [
-    '-s', emailSubject,
-    '-r', `${SITE_NAME} <noreply@localhost>`,
-    TO_EMAIL
-  ]);
+---
+Reply directly to this email to respond to ${name} at ${email}`,
+    html: `<h3>New contact form submission</h3>
+<p><strong>Name:</strong> ${name}</p>
+<p><strong>Email:</strong> <a href="mailto:${email}">${email}</a></p>
+<p><strong>Subject:</strong> ${subject}</p>
+<h4>Message:</h4>
+<p>${message.replace(/\n/g, '<br>')}</p>
+<hr>
+<p><em>Reply directly to this email to respond to ${name}</em></p>`
+  };
 
-  // Send email body to mail command
-  mail.stdin.write(emailBody);
-  mail.stdin.end();
-
-  let stderr = '';
-  mail.stderr.on('data', (data) => {
-    stderr += data.toString();
-  });
-
-  mail.on('close', (code) => {
-    if (code === 0) {
-      callback(null, 'Email sent successfully');
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      callback(error.toString(), null);
     } else {
-      callback(`Mail command failed with code ${code}: ${stderr}`, null);
+      callback(null, 'Email sent: ' + info.messageId);
     }
   });
 }

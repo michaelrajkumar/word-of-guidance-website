@@ -8,5 +8,8 @@
   },
   "keywords": ["email", "contact-form"],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "nodemailer": "^6.9.7"
+  }
 }
