@@ -93,6 +93,7 @@
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   min-width: 180px;
+  white-space: nowrap;
   opacity: 0;
   visibility: hidden;
   transform: translateY(-10px);
@@ -169,14 +170,15 @@
   }
 
   .lang-dropdown {
-    min-width: 160px;
-    right: auto;
-    left: 50%;
-    transform: translateX(-50%) translateY(-10px);
+    min-width: 140px;
+    max-width: 200px;
+    right: 0;
+    left: auto;
   }
 
-  .lang-dropdown.show {
-    transform: translateX(-50%) translateY(0);
+  .lang-option {
+    padding: 10px 12px;
+    font-size: 0.85rem;
   }
 }
 
@@ -184,9 +186,18 @@
   .lang-current-text {
     display: none;
   }
-  
+
   .lang-toggle-btn {
     padding: 8px;
+  }
+
+  .lang-dropdown {
+    min-width: 120px;
+  }
+
+  .lang-option {
+    padding: 10px;
+    font-size: 0.8rem;
   }
 }
 </style>
