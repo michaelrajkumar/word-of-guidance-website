@@ -157,19 +157,26 @@
     top: 70px;
     right: 10px;
   }
-  
+
   .lang-toggle-btn {
     padding: 8px 12px;
     font-size: 0.85rem;
   }
-  
+
   .lang-icon {
     width: 18px;
     height: 18px;
   }
-  
+
   .lang-dropdown {
     min-width: 160px;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%) translateY(-10px);
+  }
+
+  .lang-dropdown.show {
+    transform: translateX(-50%) translateY(0);
   }
 }
 
