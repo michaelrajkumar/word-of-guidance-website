@@ -170,10 +170,16 @@
   }
 
   .lang-dropdown {
-    min-width: 140px;
-    max-width: 200px;
-    right: 0;
+    position: fixed;
+    top: auto;
+    right: 10px;
     left: auto;
+    width: 150px;
+    margin-top: 0;
+  }
+
+  .lang-dropdown.show {
+    top: 120px;
   }
 
   .lang-option {
@@ -192,7 +198,12 @@
   }
 
   .lang-dropdown {
-    min-width: 120px;
+    width: 130px;
+    right: 10px;
+  }
+
+  .lang-dropdown.show {
+    top: 110px;
   }
 
   .lang-option {
