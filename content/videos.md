@@ -82,6 +82,7 @@ description: "Collection of video sermons in multiple languages"
 | 5 | Spiritual Warfare | Virtual/New Delhi | 18/2/2024 | <a href="https://www.youtube.com/watch?v=jKRKBLSpgcg" target="_blank" rel="noopener noreferrer">Watch</a> |
 | 6 | Jesus – the Christ (Tamil) | ALC Carmel, TVMalai | 14/4/2024 |  |
 | 7 | The Humanity and Divinity of Christ | ALC, Chennai | 2/2/2025 | <a href="https://youtu.be/sMjofjUJW6g" target="_blank" rel="noopener noreferrer">Watch</a> |
+| 8 | Triumphant Christian Living (வெற்றிகரமான கிறிஸ்தவ வாழ்க்கை) | Apostolic, Pallavaram | 7/12/2025 | <a href="https://youtu.be/lu4uPSijrgw?t=1257" target="_blank" rel="noopener noreferrer">Watch</a> |
 
 ## TAMIL TO HINDI
 
