@@ -37,6 +37,7 @@ description: "Collection of video sermons in multiple languages"
 | 28 | Power of God (CCC, Sri Lanka) | CCC, Colombo | 27/4/2025 | <a href="https://youtu.be/PvcTaiBs-WA" target="_blank" rel="noopener noreferrer">Watch</a> |
 | 29 | The Essentials of a Spiritual Life | CNI, Kanpur | 8/6/2025 | <a href="https://youtu.be/Yc_NuizME9A%20" target="_blank" rel="noopener noreferrer">Watch</a> |
 | 30 | Minding Our Own Business | Methodist, Kanpur | 28/8/2025 | <a href="https://www.youtube.com/watch?v=734ptogYBxQ" target="_blank" rel="noopener noreferrer">Watch</a> |
+| 31 | Waiting for the Lord's Return | CSI, Guntur | 21/12/2025 | <a href="https://youtu.be/Aafgzrr3yaA?t=989" target="_blank" rel="noopener noreferrer">Watch</a> |
 
 ## ENGLISH TO HINDI
 
