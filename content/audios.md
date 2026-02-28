@@ -113,5 +113,11 @@ layout: "single"
       <td data-label="Sermon Title"><a href="#" data-audio="/sounds/12God_s-Blessings-at-Work_2024c.mp3" data-title="God's Blessings at Work (English-Hindi)" data-speaker="Anand David" data-date="2024" data-description="Experiencing God's blessings in our work and daily life">God's Blessings at Work (English-Hindi)</a></td>
       <td data-label="Place">New Delhi</td>
     </tr>
+    <tr>
+      <td data-label="#">13</td>
+      <td data-label="Year">2026</td>
+      <td data-label="Sermon Title"><a href="#" data-audio="/sounds/13DealingWithRejection_2026_CSIGuntur.mp3" data-title="Dealing with Rejection (English)" data-speaker="Anand David" data-date="2026" data-description="How to deal with rejection in light of God's word">Dealing with Rejection (English)</a></td>
+      <td data-label="Place">CSI Church, Guntur</td>
+    </tr>
   </tbody>
 </table>
